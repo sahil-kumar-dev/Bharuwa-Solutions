@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'candara'
+  font-family:'candara';
 }
 @font-face {
   font-family: 'candara';
-  src: url('/font/Candara_bold.ttf') format('truetype'),
+  src: url('/font/Candara_bold.ttf') format('truetype');
   font-style: bold;
 }
 @font-face {
   font-family: 'candara';
-  src: url('/font/Candara.ttf') format('truetype'),
+  src: url('/font/Candara.ttf') format('truetype');
   font-style: normal;
 }
 
