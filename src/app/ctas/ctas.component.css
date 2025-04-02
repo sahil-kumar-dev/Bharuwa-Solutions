@@ -1,0 +1,36 @@
+button {
+  background-color: white;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+.navbtn {
+  width: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  button {
+    padding: 8px 16px;
+    gap: 8px;
+  }
+  .navbtn {
+    width: 120px;
+  }
+}

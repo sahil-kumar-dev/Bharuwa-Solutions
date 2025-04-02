@@ -1,0 +1,19 @@
+.container-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .container-section {
+    width: 91.6667%; /* Equivalent to w-11/12 */
+    padding-left: 0;
+    padding-right: 0;
+    gap: 24px;
+  }
+}

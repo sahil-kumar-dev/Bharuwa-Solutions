@@ -1,0 +1,18 @@
+.mustdo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .mustdo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mustdo-grid {
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
+  }
+}

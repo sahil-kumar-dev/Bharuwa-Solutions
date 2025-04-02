@@ -1,0 +1,38 @@
+<app-content-wrapper>
+  <div
+    style="
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    @for (btn of navBtn; track $index) {
+    <a href="">
+      <img [src]="btn.icon" alt="Navbar buttons" style="object-fit: contain" class="navbtn" />
+    </a>
+    }
+  </div>
+
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    "
+  >
+    @for (btn of ctaButtons; track $index) {
+    <button>
+      <span class="icon">
+        <img [src]="btn.icon" alt="arrow-right" />
+      </span>
+      <span class="button-text">{{ btn.label }}</span>
+    </button>
+    }
+  </div>
+</app-content-wrapper>

@@ -1,0 +1,10 @@
+<app-section-header [title]="'latest news'" [buttonText]="'Explore'" />
+<div class="news-container" style="margin-top: 24px;">
+  @for (item of latestNewsData; track $index) {
+  <div class="news-card">
+    <img [src]="item.image" [alt]="item.title" class="news-image" />
+    <h4 class="news-title">{{ item.title }}</h4>
+    <span class="news-arrow">&gt;</span>
+  </div>
+  }
+</div>

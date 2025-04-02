@@ -1,0 +1,25 @@
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  place-items: center;
+}
+
+@media (min-width: 768px) {
+  .destination-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .destination-grid {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .destination-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

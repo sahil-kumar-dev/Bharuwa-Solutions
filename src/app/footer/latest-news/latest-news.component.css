@@ -1,0 +1,33 @@
+.news-card {
+  background-color: white;
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.news-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.news-title,
+.news-arrow {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.news-arrow {
+  color: #1060eb;
+  font-weight: bold;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

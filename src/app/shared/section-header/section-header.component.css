@@ -1,0 +1,50 @@
+.section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #1060eb;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 18px;
+  }
+  .button-text,
+  .button-arrow {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button-text,
+  .button-arrow {
+    font-size: 12px;
+  }
+  .custom-button {
+    gap: 16px;
+  }
+  .button-text,
+  .button-arrow {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}

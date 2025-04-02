@@ -1,0 +1,13 @@
+<app-content-wrapper>
+  <div class="explore-container">
+    <app-section-header
+      [title]="'Explore by city'"
+      [buttonText]="'View all'"
+    ></app-section-header>
+    <div class="explore-grid">
+      <div *ngFor="let city of citiesData">
+        <app-city-card [city]="city" />
+      </div>
+    </div>
+  </div>
+</app-content-wrapper>

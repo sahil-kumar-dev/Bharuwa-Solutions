@@ -1,0 +1,19 @@
+<div class="card-container">
+  <div class="card-image-container">
+    <img [src]="data.image" [alt]="data.name" class="card-image" />
+  </div>
+  <div class="card-content">
+    <h3 class="card-title">{{ data.name }}</h3>
+    <p class="card-subtitle">{{ data.place }}</p>
+    <div class="card-info">
+      <div class="card-rating">
+        <span>⭐</span>
+        <span class="card-rating-text">{{ data.rating }}</span>
+      </div>
+      <div class="card-reviews">
+        <span>👤</span>
+        <span class="card-review-text">{{ data.reviews }}K</span>
+      </div>
+    </div>
+  </div>
+</div>

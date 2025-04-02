@@ -1,0 +1,8 @@
+<app-content-wrapper>
+  <app-section-header [title]="'top destinations'" [buttonText]="'Explore'" />
+  <div class="destination-grid">
+    @for (item of topDestinationsData; track $index) {
+    <app-destinations-card [data]="item" />
+    }
+  </div>
+</app-content-wrapper>

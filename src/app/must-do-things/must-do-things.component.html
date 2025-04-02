@@ -1,0 +1,11 @@
+<app-content-wrapper>
+  <app-section-header
+    [title]="'must do things'"
+    [buttonText]="'Explore'"
+  ></app-section-header>
+  <div class="mustdo-grid">
+    @for (item of mustDoThingsData; track $index) {
+    <app-things-card [data]="item" />
+    }
+  </div>
+</app-content-wrapper>

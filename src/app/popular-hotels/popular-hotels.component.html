@@ -1,0 +1,152 @@
+<app-content-wrapper>
+  <div class="content-container">
+    <div class="left-section">
+      <div class="tabs">
+        <div class="tab active">
+          <p>Hotels</p>
+        </div>
+        <div class="tab">
+          <p>Restaurants</p>
+        </div>
+        <div class="tab">
+          <p>Places</p>
+        </div>
+      </div>
+      <app-section-header
+        title="popular hotels"
+        buttonText="Explore"
+      ></app-section-header>
+      <div class="popular-hotel-grid">
+        @for (hotel of popularHotels; track $index) {
+        <div class="card">
+          <!-- <div class="card-image"> -->
+            <img [src]="hotel.image" [alt]="hotel.name" />
+          <!-- </div> -->
+          <div class="card-content">
+            <div>
+              <div class="card-header">
+                <h2 class="card-title">{{ hotel.name }}</h2>
+                <div class="card-price">
+                  <span class="price-amount">{{
+                    hotel.price | currency : "INR"
+                  }}</span>
+                  <span class="price-period">/night</span>
+                </div>
+              </div>
+              <div class="card-location">
+                <span class="location-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                <span class="location-text">Jaipur</span>
+                <span class="amenity-icon wifi-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                    <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                    <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                    <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                  </svg>
+                </span>
+                <span class="amenity-icon check-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+              </div>
+              <div class="card-rating">
+                <span class="star-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                </span>
+                <span class="rating-score">4.2</span>
+                <div class="review-count">
+                  <span class="review-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="review-number">1.6K</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+              <button class="check-button">Check now</button>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="right-section">
+      <app-section-header
+        title="nearby locations"
+        buttonText="View Map"
+      ></app-section-header>
+      <img
+        src="nearbylocationmap.webp"
+        alt="nearbylocationmap"
+        class="map-image"
+      />
+    </div>
+  </div>
+</app-content-wrapper>

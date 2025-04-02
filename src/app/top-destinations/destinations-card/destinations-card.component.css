@@ -1,0 +1,136 @@
+.card-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 200px; */
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    width: 237px;
+  }
+}
+
+.card-image-container {
+  position: relative;
+  width: 100% ;
+  min-width: 150px;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .card-image-container {
+    height: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-image-container {
+    height: 200px;
+  }
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  height: 80px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .card-content {
+    padding: 12px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-content {
+    padding: 16px;
+    height: 90px;
+  }
+}
+
+.card-title {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-title {
+    font-size: 16px;
+  }
+}
+
+.card-subtitle {
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .card-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-subtitle {
+    font-size: 14px;
+  }
+}
+
+.card-info {
+  display: flex; 
+  align-items: center;
+  gap: 4px;
+}
+
+.card-rating,
+.card-reviews {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-rating-text,
+.card-review-text {
+  font-size: 8px;
+  font-weight: bold;
+  color: #636363;
+}
+
+@media (min-width: 768px) {
+  .card-rating-text,
+  .card-review-text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-rating-text,
+  .card-review-text {
+    font-size: 12px;
+  }
+}
